@@ -9,17 +9,14 @@ struct ListRowView: View {
             /**
                             The Design
              * User picks emoji for their goal
-             * [icon] [name of goal] ------- [date information vstack]
+             * [icon/colour] [name of goal] ------- [date information vstack]
              */
-            
-            
+
             Text(item.title)
             Spacer()
             VStack(alignment: .trailing){
                 let dateStored = String(item.theDate)
-                
-               
-                
+
                 Text(dateStored + " Days")
                 Text("Since: " + item.theStartDate.formatted())
                     .font(.caption)

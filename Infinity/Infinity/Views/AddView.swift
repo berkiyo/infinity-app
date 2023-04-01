@@ -21,7 +21,14 @@ struct AddView: View {
     @State private var pickedDate = Date.now
     @State private var todayDate = Date.now
     
+    // For color picker
+    @State private var selectedColor: Color = .red
+    
     var body: some View {
+        
+        /**
+         The styling of the AddView goes here.
+         */
         ScrollView {
             VStack {
                 
@@ -35,6 +42,16 @@ struct AddView: View {
                 Divider() // add a divider
                     .padding(.horizontal)
                     .padding(.vertical)
+                
+                Text("Pick your color")
+                    .fontWeight(.medium)
+                
+                // COLOR PICKER
+                ColorPickerView(selectedColor: $selectedColor)
+                Spacer()
+                Circle()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(selectedColor)
                 
                 HStack {
                     Text("Start Date")
