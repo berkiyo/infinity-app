@@ -18,6 +18,7 @@ struct ListView: View {
             if listViewModel.items.isEmpty { // if there are no items, run this code.
                 NoItemsView()
                     .transition(AnyTransition.opacity.animation(.easeIn))
+                    .environmentObject(listViewModel)
             } else {
                 List {
                     ForEach(listViewModel.items) {
@@ -25,7 +26,6 @@ struct ListView: View {
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item) // update item
-                                    
                                     // formatting the date
                                     let formatter = DateFormatter()
                                     formatter.dateFormat = "d"
@@ -33,6 +33,7 @@ struct ListView: View {
                                     let newDateInt = Int(newDate) ?? 0
                                     print(newDateInt) // DEBUG PURPOSES
                                 }
+                                
                             }
                     }
                     .onDelete(perform: listViewModel.deleteItem) // all from "ListViewModel.swift"
@@ -51,7 +52,7 @@ struct ListView: View {
                 },
             trailing:
                 HStack {
-                    NavigationLink("➕", destination: AddView())
+                    NavigationLink("➕", destination: AddView().environmentObject(listViewModel))
                 }
         )
     }

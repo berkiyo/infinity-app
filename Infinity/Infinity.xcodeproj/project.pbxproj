@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
-		60DB3E5E29D061080031E383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5D29D061080031E383 /* ContentView.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
 		60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E6329D061090031E383 /* Preview Assets.xcassets */; };
 		60DB3E6E29D061090031E383 /* InfinityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E6D29D061090031E383 /* InfinityTests.swift */; };
@@ -50,7 +49,6 @@
 /* Begin PBXFileReference section */
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
-		60DB3E5D29D061080031E383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60DB3E5F29D061090031E383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60DB3E6129D061090031E383 /* Infinity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Infinity.entitlements; sourceTree = "<group>"; };
 		60DB3E6329D061090031E383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				60DB3E8729D061D10031E383 /* ViewModels */,
 				60DB3E8629D061CB0031E383 /* Views */,
 				60DB3E5B29D061080031E383 /* InfinityApp.swift */,
-				60DB3E5D29D061080031E383 /* ContentView.swift */,
 				60DB3E5F29D061090031E383 /* Assets.xcassets */,
 				60DB3E6129D061090031E383 /* Infinity.entitlements */,
 				60DB3E6229D061090031E383 /* Preview Content */,
@@ -334,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB3E8A29D061FC0031E383 /* ItemModel.swift in Sources */,
-				60DB3E5E29D061080031E383 /* ContentView.swift in Sources */,
 				60DB3E9729D0628E0031E383 /* AddView.swift in Sources */,
 				60DB3E9929D0629C0031E383 /* HomeView.swift in Sources */,
 				60DB3E8C29D062330031E383 /* ListViewModel.swift in Sources */,

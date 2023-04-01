@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ListRowView: View {
-    
+    @Environment(\.scenePhase) var scenePhase
     let item: ItemModel
     var body: some View {
         HStack {

@@ -43,7 +43,7 @@ struct AddView: View {
                 //.frame(maxWidth: .infinity, alignment: .leading) //<-- Here
                 
                 
-                DatePicker("Enter your date", selection: $pickedDate, displayedComponents: .date)
+                DatePicker("Enter your date", selection: $pickedDate, in: ...Date(), displayedComponents: .date)
                     .datePickerStyle(GraphicalDatePickerStyle())
                 /*
                  DatePicker("Streak started on date:", selection: $pickedDate)

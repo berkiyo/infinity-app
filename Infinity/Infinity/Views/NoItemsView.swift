@@ -3,7 +3,8 @@ import SwiftUI
 struct NoItemsView: View {
     
     @State var animate: Bool = false
-    
+    @EnvironmentObject var listViewModel: ListViewModel
+
     
     var body: some View {
         ScrollView {
@@ -13,7 +14,7 @@ struct NoItemsView: View {
                     .fontWeight(.semibold)
                     .padding(40)
                 NavigationLink(
-                    destination: AddView(),
+                    destination: AddView().environmentObject(listViewModel),
                     label: {
                         Text("Add something! 📝")
                             .padding(.all, 16)
