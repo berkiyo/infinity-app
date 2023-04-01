@@ -29,15 +29,13 @@ struct ListView: View {
                                     // formatting the date
                                     let formatter = DateFormatter()
                                     formatter.dateFormat = "d"
-                                    let newDate = formatter.string(from: item.todaysDate)
+                                    let newDate = formatter.string(from: item.theStartDate)
                                     let newDateInt = Int(newDate) ?? 0
                                     print(newDateInt) // DEBUG PURPOSES
                                 }
-                                
                             }
                     }
                     .onDelete(perform: listViewModel.deleteItem) // all from "ListViewModel.swift"
-                    .onMove(perform: listViewModel.moveItem)
                 }
                 .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive)).animation(.easeIn)
             }

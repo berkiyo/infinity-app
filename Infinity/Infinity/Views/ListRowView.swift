@@ -5,18 +5,26 @@ struct ListRowView: View {
     let item: ItemModel
     var body: some View {
         HStack {
-            if (item.isCompleted){
-                Image(systemName: "checkmark.circle")
-                    .foregroundColor(.green)
-                
-            } else {
-                Image(systemName: "circle")
-                    .foregroundColor(.red)
-            }
+            
+            /**
+                            The Design
+             * User picks emoji for their goal
+             * [icon] [name of goal] ------- [date information vstack]
+             */
+            
+            
             Text(item.title)
             Spacer()
-            let dateStored = String(item.theDate)
-            Text(dateStored + " Days")
+            VStack(alignment: .trailing){
+                let dateStored = String(item.theDate)
+                
+               
+                
+                Text(dateStored + " Days")
+                Text("Since: " + item.theStartDate.formatted())
+                    .font(.caption)
+                
+            }
         }
         .padding(.vertical, 8)
     }

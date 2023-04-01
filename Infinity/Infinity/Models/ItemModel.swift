@@ -10,16 +10,16 @@ struct ItemModel: Identifiable, Codable {
     let title: String           // name of streak
     var theDate: Int            // the number of days since streak started
     var isCompleted: Bool       // streak completed status
-    var todaysDate: Date        // for storing todays date, this is updated every 24 hours
+    var theStartDate: Date
     
     
     // init
-    init(id: String = UUID().uuidString, title: String, isCompleted: Bool, theDate: Int, todaysDate: Date) {
+    init(id: String = UUID().uuidString, title: String, isCompleted: Bool, theDate: Int, theStartDate: Date) {
         self.id = id
         self.title = title
         self.theDate = theDate
         self.isCompleted = isCompleted
-        self.todaysDate = todaysDate
+        self.theStartDate = theStartDate
     }
     
     // update the items
@@ -33,11 +33,11 @@ struct ItemModel: Identifiable, Codable {
         // this is to check the "isCompleted" variable to see if it is time to progress
         if isCompleted == false {
             newDate = newDate + 1
-            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, todaysDate: todaysDate)
+            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: theStartDate)
         }
         else {
             newDate = newDate - 1
-            return ItemModel(id: id, title: title, isCompleted: false, theDate: newDate, todaysDate: todaysDate)
+            return ItemModel(id: id, title: title, isCompleted: false, theDate: newDate, theStartDate: theStartDate)
         }
         
     }

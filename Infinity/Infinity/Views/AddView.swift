@@ -43,7 +43,7 @@ struct AddView: View {
                 //.frame(maxWidth: .infinity, alignment: .leading) //<-- Here
                 
                 
-                DatePicker("Enter your date", selection: $pickedDate, in: ...Date(), displayedComponents: .date)
+                DatePicker("Enter your date", selection: $pickedDate, in: ...Date())
                     .datePickerStyle(GraphicalDatePickerStyle())
                 /*
                  DatePicker("Streak started on date:", selection: $pickedDate)
@@ -89,13 +89,14 @@ struct AddView: View {
      */
     func saveButtonPressed() {
         if textIsAppropriate() { // if textIsAppropriate is true...
+            
             //listViewModel.addItem(title: textFieldText)
             
             // find the difference between two dates
             let diffs = Calendar.current.dateComponents([.day], from: pickedDate, to: todayDate)
             print(diffs.day!)
             
-            listViewModel.addItem(title: textFieldText, theDate: Int(diffs.day!))
+            listViewModel.addItem(title: textFieldText, theDate: Int(diffs.day!), theStartDate: pickedDate)
             presentationMode.wrappedValue.dismiss() // go back one in the presentation view hierarchy.
         }
         

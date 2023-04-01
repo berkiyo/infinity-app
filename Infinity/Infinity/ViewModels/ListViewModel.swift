@@ -42,8 +42,8 @@ class ListViewModel: ObservableObject {
     }
     
     // function to add items to list
-    func addItem(title: String, theDate: Int) {
-        let newItem = ItemModel(title: title, isCompleted: false, theDate: theDate, todaysDate: Date.now)
+    func addItem(title: String, theDate: Int, theStartDate: Date) {
+        let newItem = ItemModel(title: title, isCompleted: false, theDate: theDate, theStartDate: theStartDate)
         items.append(newItem)
     }
     
