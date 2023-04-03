@@ -9,9 +9,7 @@ struct HomeView: View {
     @State var selection = 1
     
     var body: some View {
-        /**
-         Check and see if 24 hours has passed.
-         */
+
         TabView(selection: $selection) {
             ListView()
                 .tabItem {

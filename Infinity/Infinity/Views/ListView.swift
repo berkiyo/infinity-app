@@ -14,6 +14,7 @@ struct ListView: View {
      Start Body
      */
     var body: some View {
+        
         ZStack {
             if listViewModel.items.isEmpty { // if there are no items, run this code.
                 NoItemsView()
@@ -23,21 +24,10 @@ struct ListView: View {
                 List {
                     ForEach(listViewModel.items) {
                         item in ListRowView(item: item)
-                            .onTapGesture {
-                                withAnimation(.linear) {
-                                    listViewModel.updateItem(item: item) // update item
-                                    // formatting the date
-                                    let formatter = DateFormatter()
-                                    formatter.dateFormat = "d"
-                                    let newDate = formatter.string(from: item.theStartDate)
-                                    let newDateInt = Int(newDate) ?? 0
-                                    print(newDateInt) // DEBUG PURPOSES
-                                }
-                            }
                     }
                     .onDelete(perform: listViewModel.deleteItem) // all from "ListViewModel.swift"
                 }
-                .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive)).animation(.easeIn)
+                .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive))
             }
         }
         .navigationTitle("Infinity")

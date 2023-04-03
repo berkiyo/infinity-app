@@ -25,19 +25,16 @@ struct ItemModel: Identifiable, Codable {
     // update the items
     func updateCompletion() -> ItemModel {
         
-        
         var newDate: Int = theDate
+        let timeToLive: TimeInterval = 60 * 60 * 24 // 60 seconds * 60 minutes * 24 hours
+
+        let isExpired: Bool = Date().timeIntervalSince(theStartDate) >= timeToLive
         
-        
-        
-        // this is to check the "isCompleted" variable to see if it is time to progress
-        if isCompleted == false {
+        if isExpired {
             newDate = newDate + 1
             return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: theStartDate)
-        }
-        else {
-            newDate = newDate - 1
-            return ItemModel(id: id, title: title, isCompleted: false, theDate: newDate, theStartDate: theStartDate)
+        } else {
+            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: theStartDate)
         }
         
     }
