@@ -9,7 +9,7 @@ struct HomeView: View {
     @State var selection = 1
     
     var body: some View {
-
+        
         TabView(selection: $selection) {
             ListView()
                 .tabItem {
@@ -24,7 +24,7 @@ struct HomeView: View {
         }
         .navigationTitle(selection == 1 ? "Goals" : "Settings")
         .navigationBarTitleDisplayMode(.inline)// << here !!
-
+        
     }
 }
 

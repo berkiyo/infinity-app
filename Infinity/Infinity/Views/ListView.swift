@@ -15,6 +15,7 @@ struct ListView: View {
      */
     var body: some View {
         
+        
         ZStack {
             if listViewModel.items.isEmpty { // if there are no items, run this code.
                 NoItemsView()
@@ -24,6 +25,14 @@ struct ListView: View {
                 List {
                     ForEach(listViewModel.items) {
                         item in ListRowView(item: item)
+                            .onTapGesture {
+                                /**
+                                 This is currently working as a manual sync button, this will be replaced in time to be automatic and run like a CRON.
+                                 */
+                                withAnimation(.linear) {
+                                    listViewModel.updateItem(item: item) // update item
+                                }
+                            }
                     }
                     .onDelete(perform: listViewModel.deleteItem) // all from "ListViewModel.swift"
                 }
@@ -44,4 +53,6 @@ struct ListView: View {
                 }
         )
     }
+    
+
 }
