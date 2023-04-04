@@ -32,14 +32,14 @@ struct ItemModel: Identifiable, Codable {
         var newDate: Int = theDate
         let timeToLive: TimeInterval = 60*60*24 // 60 seconds * 60 minutes * 24 hours
         
-        let isExpired: Bool = Date().timeIntervalSince(theStartDate) >= timeToLive
+        let isExpired: Bool = Date().timeIntervalSince(overwrittenDate) >= timeToLive
         //let isExpiredNew: Bool = Date().timeIntervalSince(overwrittenDate) >= timeToLive
         
         if isExpired {
             newDate = newDate + 1
-            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: overwrittenDate, theColor: theColor, overwrittenDate: Date.now)
+            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: theStartDate, theColor: theColor, overwrittenDate: Date.now)
         } else {
-            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: theStartDate, theColor: theColor, overwrittenDate: overwrittenDate)
+            return ItemModel(id: id, title: title, isCompleted: true, theDate: newDate, theStartDate: theStartDate, theColor: theColor, overwrittenDate: theStartDate)
         }
     }
 }
