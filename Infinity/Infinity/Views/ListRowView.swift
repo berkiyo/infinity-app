@@ -14,6 +14,7 @@ struct ListRowView: View {
         let diffs = Calendar.current.dateComponents([.day], from: item.theStartDate, to: Date.now)
         let diffsString = "\(diffs.day!)"
         
+        // View begins here
         HStack {
             
             /**
