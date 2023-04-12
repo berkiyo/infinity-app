@@ -7,6 +7,13 @@ struct ListRowView: View {
      MAIN BODY
      */
     var body: some View {
+        // This is where we put thenumber of days since calculation, nice and simple
+        
+        // Difference between start date + today's date
+        // see if hour
+        let diffs = Calendar.current.dateComponents([.day], from: item.theStartDate, to: Date.now)
+        let diffsString = "\(diffs.day!)"
+        
         HStack {
             
             /**
@@ -22,7 +29,9 @@ struct ListRowView: View {
             VStack(alignment: .trailing){
                 let dateStored = String(item.theDate)
                 
-                Text(dateStored + " Days")
+            
+                Text(diffsString + " days")
+                
                 Text("Since: " + item.theStartDate.formatted())
                     .font(.caption)
                 
