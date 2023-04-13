@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60611C7429E6BE63005CF452 /* IconNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7329E6BE63005CF452 /* IconNames.swift */; };
+		60611C7929E6C258005CF452 /* infinity-icon-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7629E6C258005CF452 /* infinity-icon-3.jpg */; };
+		60611C7A29E6C258005CF452 /* infinity-icon-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7729E6C258005CF452 /* infinity-icon-2.jpg */; };
+		60611C7B29E6C258005CF452 /* infinity-icon-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7829E6C258005CF452 /* infinity-icon-1.jpg */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60611C7329E6BE63005CF452 /* IconNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNames.swift; sourceTree = "<group>"; };
+		60611C7629E6C258005CF452 /* infinity-icon-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "infinity-icon-3.jpg"; sourceTree = "<group>"; };
+		60611C7729E6C258005CF452 /* infinity-icon-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "infinity-icon-2.jpg"; sourceTree = "<group>"; };
+		60611C7829E6C258005CF452 /* infinity-icon-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "infinity-icon-1.jpg"; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -100,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60611C7529E6BED5005CF452 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				60611C7829E6C258005CF452 /* infinity-icon-1.jpg */,
+				60611C7729E6C258005CF452 /* infinity-icon-2.jpg */,
+				60611C7629E6C258005CF452 /* infinity-icon-3.jpg */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		60DB3E4F29D061080031E383 = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +141,12 @@
 		60DB3E5A29D061080031E383 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
+				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
 				60DB3E8729D061D10031E383 /* ViewModels */,
 				60DB3E8629D061CB0031E383 /* Views */,
 				60DB3E5B29D061080031E383 /* InfinityApp.swift */,
+				60611C7329E6BE63005CF452 /* IconNames.swift */,
 				60DB3E5F29D061090031E383 /* Assets.xcassets */,
 				60DB3E6129D061090031E383 /* Infinity.entitlements */,
 				60DB3E6229D061090031E383 /* Preview Content */,
@@ -307,7 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60611C7929E6C258005CF452 /* infinity-icon-3.jpg in Resources */,
+				60611C7A29E6C258005CF452 /* infinity-icon-2.jpg in Resources */,
 				60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */,
+				60611C7B29E6C258005CF452 /* infinity-icon-1.jpg in Resources */,
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +363,7 @@
 				60DB3E9129D062590031E383 /* ChangeIconView.swift in Sources */,
 				60DB3E9329D0625F0031E383 /* GuideView.swift in Sources */,
 				60DB3EA529D062FC0031E383 /* SplashScreenView.swift in Sources */,
+				60611C7429E6BE63005CF452 /* IconNames.swift in Sources */,
 				60DB3E9B29D062AF0031E383 /* ListRowView.swift in Sources */,
 				60DB3E9D29D062BA0031E383 /* ListView.swift in Sources */,
 				60DB3E9F29D062CA0031E383 /* NoItemsView.swift in Sources */,
