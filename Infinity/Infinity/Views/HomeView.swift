@@ -6,7 +6,9 @@ import SwiftUI
  */
 struct HomeView: View {
     
-    @State var selection = 1
+    @State var selection = 1 // by default, go with
+    @State var infinityPremium = false // this determines if the user is premium or not
+    
     
     var body: some View {
         

@@ -11,6 +11,9 @@
 		60611C7929E6C258005CF452 /* infinity-icon-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7629E6C258005CF452 /* infinity-icon-3.jpg */; };
 		60611C7A29E6C258005CF452 /* infinity-icon-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7729E6C258005CF452 /* infinity-icon-2.jpg */; };
 		60611C7B29E6C258005CF452 /* infinity-icon-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7829E6C258005CF452 /* infinity-icon-1.jpg */; };
+		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
+		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
+		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
@@ -23,7 +26,7 @@
 		60DB3E8F29D062510031E383 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E8E29D062510031E383 /* AboutView.swift */; };
 		60DB3E9129D062590031E383 /* ChangeIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9029D062590031E383 /* ChangeIconView.swift */; };
 		60DB3E9329D0625F0031E383 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9229D0625F0031E383 /* GuideView.swift */; };
-		60DB3E9529D0626E0031E383 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9429D0626E0031E383 /* PremiumView.swift */; };
+		60DB3E9529D0626E0031E383 /* ProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9429D0626E0031E383 /* ProView.swift */; };
 		60DB3E9729D0628E0031E383 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9629D0628E0031E383 /* AddView.swift */; };
 		60DB3E9929D0629C0031E383 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9829D0629C0031E383 /* HomeView.swift */; };
 		60DB3E9B29D062AF0031E383 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E9A29D062AF0031E383 /* ListRowView.swift */; };
@@ -56,6 +59,9 @@
 		60611C7629E6C258005CF452 /* infinity-icon-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "infinity-icon-3.jpg"; sourceTree = "<group>"; };
 		60611C7729E6C258005CF452 /* infinity-icon-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "infinity-icon-2.jpg"; sourceTree = "<group>"; };
 		60611C7829E6C258005CF452 /* infinity-icon-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "infinity-icon-1.jpg"; sourceTree = "<group>"; };
+		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
+		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -72,7 +78,7 @@
 		60DB3E8E29D062510031E383 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		60DB3E9029D062590031E383 /* ChangeIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeIconView.swift; sourceTree = "<group>"; };
 		60DB3E9229D0625F0031E383 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
-		60DB3E9429D0626E0031E383 /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		60DB3E9429D0626E0031E383 /* ProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProView.swift; sourceTree = "<group>"; };
 		60DB3E9629D0628E0031E383 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		60DB3E9829D0629C0031E383 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		60DB3E9A29D062AF0031E383 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
@@ -218,7 +224,10 @@
 				60DB3E8E29D062510031E383 /* AboutView.swift */,
 				60DB3E9029D062590031E383 /* ChangeIconView.swift */,
 				60DB3E9229D0625F0031E383 /* GuideView.swift */,
-				60DB3E9429D0626E0031E383 /* PremiumView.swift */,
+				60DB3E9429D0626E0031E383 /* ProView.swift */,
+				60611C7C29EA5237005CF452 /* NotificationView.swift */,
+				60611C7E29EA6367005CF452 /* AppleWatchView.swift */,
+				60611C8029EA6379005CF452 /* QuotesView.swift */,
 			);
 			path = SettingsViews;
 			sourceTree = "<group>";
@@ -366,13 +375,16 @@
 				60611C7429E6BE63005CF452 /* IconNames.swift in Sources */,
 				60DB3E9B29D062AF0031E383 /* ListRowView.swift in Sources */,
 				60DB3E9D29D062BA0031E383 /* ListView.swift in Sources */,
+				60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */,
 				60DB3E9F29D062CA0031E383 /* NoItemsView.swift in Sources */,
 				60DB3EA329D062E40031E383 /* SettingsView.swift in Sources */,
 				60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */,
-				60DB3E9529D0626E0031E383 /* PremiumView.swift in Sources */,
+				60DB3E9529D0626E0031E383 /* ProView.swift in Sources */,
 				60DB3EA129D062D70031E383 /* PlaceholderView.swift in Sources */,
 				60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */,
 				60DB3E8F29D062510031E383 /* AboutView.swift in Sources */,
+				60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */,
+				60611C8129EA6379005CF452 /* QuotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

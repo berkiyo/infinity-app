@@ -9,24 +9,29 @@ struct ColorPickerView: View {
     
     
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(colors, id: \.self) {
-                    color in
-                    Circle()
-                        .foregroundColor(color)
-                        .frame(width: 30, height: 30)
-                        .opacity(color == selectedColor ? 0.5 : 1.0)
-                        .scaleEffect(color == selectedColor ? 1.1 : 1.0)
-                        .onTapGesture {
-                            selectedColor = color
+        
+        VStack {
+            GeometryReader { geometry in
+                ScrollView(.horizontal) {
+                    HStack(alignment: .center) {
+                        ForEach(colors, id: \.self) {
+                            color in
+                            Circle()
+                                .foregroundColor(color)
+                                .frame(width: 30, height: 30)
+                                .opacity(color == selectedColor ? 0.5 : 1.0)
+                                .scaleEffect(color == selectedColor ? 1.1 : 1.0)
+                                .onTapGesture {
+                                    selectedColor = color
+                                }
                         }
-                    
+                    }
+                    .padding()
+                    .background(.thinMaterial)
+                    .cornerRadius(20)
+                    .frame(width: geometry.size.width)
                 }
             }
-            .padding()
-            .background(.thinMaterial)
-            .cornerRadius(20)
         }
     }
 }
