@@ -36,6 +36,7 @@ struct InfinityApp: App {
                 HomeView()
                     .environmentObject(listViewModel)
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

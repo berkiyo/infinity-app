@@ -47,7 +47,10 @@ struct AddView: View {
                 
                 // COLOR PICKER
                 ColorPickerView(selectedColor: $selectedColor)
-                    .padding(.horizontal)
+                    .padding(.horizontal, 5)
+                    .padding(.bottom, 50)
+                    
+                
                 Spacer()
                 
                 HStack {
@@ -57,8 +60,7 @@ struct AddView: View {
                         .frame(width: 30, height: 30)
                         .foregroundColor(selectedColor)
                 }
-                .padding(.vertical)
-
+                .padding(.vertical, 20)
                 
                 /**
                  BEGIN DATE/CALENDAR LOGIC
