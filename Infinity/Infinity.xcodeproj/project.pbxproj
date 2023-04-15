@@ -14,6 +14,8 @@
 		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
 		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
 		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
+		60611C8429EA657D005CF452 /* infinity.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 60611C8329EA657D005CF452 /* infinity.storekit */; };
+		60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8529EA66EE005CF452 /* StoreViewModel.swift */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
 		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
+		60611C8329EA657D005CF452 /* infinity.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = infinity.storekit; sourceTree = "<group>"; };
+		60611C8529EA66EE005CF452 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -124,6 +128,14 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
+		60611C8229EA6540005CF452 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				60611C8329EA657D005CF452 /* infinity.storekit */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
 		60DB3E4F29D061080031E383 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		60DB3E5A29D061080031E383 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
+				60611C8229EA6540005CF452 /* StoreKit */,
 				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
 				60DB3E8729D061D10031E383 /* ViewModels */,
@@ -206,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				60DB3E8B29D062330031E383 /* ListViewModel.swift */,
+				60611C8529EA66EE005CF452 /* StoreViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,6 +354,7 @@
 				60611C7A29E6C258005CF452 /* infinity-icon-2.jpg in Resources */,
 				60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */,
 				60611C7B29E6C258005CF452 /* infinity-icon-1.jpg in Resources */,
+				60611C8429EA657D005CF452 /* infinity.storekit in Resources */,
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB3E8A29D061FC0031E383 /* ItemModel.swift in Sources */,
+				60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */,
 				60DB3E9729D0628E0031E383 /* AddView.swift in Sources */,
 				60DB3E9929D0629C0031E383 /* HomeView.swift in Sources */,
 				60DB3E8C29D062330031E383 /* ListViewModel.swift in Sources */,

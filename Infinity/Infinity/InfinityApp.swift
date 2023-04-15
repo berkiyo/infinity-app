@@ -25,7 +25,7 @@ extension UIDevice {
 
 @main
 struct InfinityApp: App {
-    
+    @StateObject var storeVM = StoreViewModel()
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     
     // the body
@@ -35,6 +35,7 @@ struct InfinityApp: App {
             NavigationView {
                 HomeView()
                     .environmentObject(listViewModel)
+                    .environmentObject(storeVM)
             }
             .navigationViewStyle(StackNavigationViewStyle())
         }
