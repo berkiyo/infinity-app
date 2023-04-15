@@ -68,7 +68,7 @@ struct ProView: View {
                         // Button to subscribe (monthly)
                         Button(action: {
                             Task {
-                                await buy(product: storeVM.subscriptions[1])
+                                await buy(product: storeVM.subscriptions[0])
                             }
                         }) {
                             VStack {

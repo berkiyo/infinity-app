@@ -1,5 +1,7 @@
 import SwiftUI
 
+// For future release.
+
 struct AppleWatchView: View {
     var body: some View {
         ZStack {

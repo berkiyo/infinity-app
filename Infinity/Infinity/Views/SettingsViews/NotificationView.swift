@@ -1,20 +1,43 @@
 import SwiftUI
+import UserNotifications
 
 struct NotificationView: View {
     var body: some View {
         ZStack {
             VStack {
-                Text("How to use Infinity?")
+                Text("Notifications")
                     .font(.title)
                     .bold()
                     .padding()
                 
-                Text("Infinity is for tracking streaks and progress on various goals. You can use this to track how long you have been sticking to a habit or how long you have been avoiding a bad habit. The choice is up to you!")
-                    .padding()
+                Button("Request Permission") {
+                    // first, if user grants permission, then we can start to schedule notifications
+                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                        if success {
+                            print("All set!")
+                        } else if let error = error {
+                            print(error.localizedDescription)
+                        }
+                    }
+                    
+                }
                 
-                Text("This app will send you reminders everyday to check off your task and then it will add 1 day to your streak (i.e. every 24 hours).")
-                    .padding()
+                Button("Schedule Notification") {
+                    let content = UNMutableNotificationContent()
+                    content.title = "Never give up!"
+                    content.subtitle = "This is the way."
+                    content.sound = UNNotificationSound.default
 
+                    // show this notification five seconds from now
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+                    // choose a random identifier
+                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+
+                    // add our notification request
+                    UNUserNotificationCenter.current().add(request)
+                }
+                
                 Spacer()
             }
             .padding()

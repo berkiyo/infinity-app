@@ -3,54 +3,69 @@ import StoreKit
 
 struct SettingsView: View {
     @Environment(\.requestReview) var requestReview
-    @State var isNotPro: Bool = true
+    @EnvironmentObject var storeVM: StoreViewModel
+    
     
     var body: some View {
         ZStack {
             VStack {
                 NavigationStack {
                     List {
-                        // GUIDE
+                        // Guide View
                         NavigationLink { GuideView() } label: {
                             Text("❓ How To Guide")
                         }
-                        // PURCHASE PRO
+                        
+                        
+                        // Pro View
                          NavigationLink { ProView() } label: {
                          Text("💎 Infinity Pro")
                          }
                         
-                        // CHANGE ICON VIEW
+                        
+                        // Icon Changer View
                         NavigationLink { ChangeIconView() } label: {
                             Text("📱 Change App Icon (Pro)")
                         }
-                        .disabled(isNotPro)
+                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        
+                        
                         
                         // Apple Watch Complications View
+                        // For future release
+                        /*
                         NavigationLink { AppleWatchView() } label: {
                             Text("⌚️ Apple Watch Complications (Pro)")
                         }
-                        .disabled(isNotPro)
+                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        */
                         
-                        //
+                        
+                        // Quotes View
                         NavigationLink { QuotesView() } label: {
                             Text("😤 Motivational Quotes (Pro)")
                         }
-                        .disabled(isNotPro)
+                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
                         
-                        // NOTIFICATION VIEW
+                        
+                        // Notification View
                         NavigationLink { NotificationView() } label: {
                             Text("🔔 Notifications")
                         }
+                        
+                        
                          
-                        // ABOUT VIEW
+                        // About View
                         NavigationLink { AboutView() } label: {
                             Text("🧐 About Infinity")
                         }
                         
-                        // GIVE FEEDBACK
+                        
+                        // Feedback Hyperlink (Email)
                         Link("✉️ Give Feedback", destination: URL(string: "mailto:qwerty@tekbyte.net")!)
                         
-                        // LEAVE A REVIEW
+                        
+                        // Review prompt
                         Button("⭐️ Leave a review") {
                             requestReview()
                         }
