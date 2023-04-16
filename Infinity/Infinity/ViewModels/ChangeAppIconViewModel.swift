@@ -15,6 +15,7 @@ final class ChangeAppIconViewModel: ObservableObject {
         //case appIcon1 = "AppIcon-1"
         case appIcon2 = "AppIcon-2"
         case appIcon3 = "AppIcon-3"
+        case appIcon4 = "AppIcon-4"
 
         var id: String { rawValue }
         var iconName: String? {
@@ -35,6 +36,8 @@ final class ChangeAppIconViewModel: ObservableObject {
                 return "Bold"
             case .appIcon3:
                 return "Ocean"
+            case .appIcon4:
+                return "Neon"
             }
         }
 

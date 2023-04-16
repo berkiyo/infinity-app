@@ -27,9 +27,9 @@ struct ProView: View {
                             .font(.system(size: 30))
                             .foregroundColor(.orange)
                         VStack(alignment: .leading){
-                            Text("Update Icons")
+                            Text("Goodies")
                                 .bold()
-                            Text("The pro version comes with widgets, Apple Watch support and more!")
+                            Text("The pro version comes with daily quote notifications, custom icon picker and a widget!")
                         }
                     }
                     .padding(.vertical)
@@ -40,7 +40,7 @@ struct ProView: View {
                             .font(.system(size: 30))
                             .foregroundColor(.orange)
                         VStack(alignment: .leading){
-                            Text("Premium For Life")
+                            Text("New Planned Features")
                                 .bold()
                             Text("By purchasing/subscribing, you will get any new exclusive premium features.")
                         }
@@ -81,9 +81,13 @@ struct ProView: View {
                         .background(.blue)
                         .foregroundColor(.white)
                         .cornerRadius(22)
-
+                        .shadow(radius: 10)
+                        
+                        // blank space
                         Text("")
-                            .padding(5)
+                            .padding(3)
+                        
+                        
                         
                         // Button to subscribe (yearly)
                         Button(action: {
@@ -94,7 +98,7 @@ struct ProView: View {
                             VStack {
                                 Text("Subscribe for $17.99 yearly")
                                     .bold()
-                                Text("7 day trial included")
+                                Text("Save 50% off monthly + 7 day trial included")
                                     .font(.caption)
                                     .padding(.top, 1)
                             }
@@ -103,6 +107,7 @@ struct ProView: View {
                         .background(.blue)
                         .foregroundColor(.white)
                         .cornerRadius(22)
+                        .shadow(radius: 10)
 
                         Text("Cancel Anytime. Family Sharing Included.")
                             .font(.caption)
@@ -130,9 +135,11 @@ struct ProView: View {
                 
                 // END IF
             } else {
-                
-                Text("You are a pro 😎 ")
-              // pro view
+                VStack {
+                    Text("You are a Pro!")
+                        .font(.title)
+                        .bold()
+                }
             }
             
             

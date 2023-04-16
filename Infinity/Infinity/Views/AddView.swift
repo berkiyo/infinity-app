@@ -49,9 +49,7 @@ struct AddView: View {
                 ColorPickerView(selectedColor: $selectedColor)
                     .padding(.horizontal, 5)
                     .padding(.bottom, 50)
-                    
                 
-                Spacer()
                 
                 HStack {
                     Text("Selected Color")
@@ -60,17 +58,22 @@ struct AddView: View {
                         .frame(width: 30, height: 30)
                         .foregroundColor(selectedColor)
                 }
-                .padding(.vertical, 20)
+                .padding(.vertical, 2)
+                
+                
+                Divider() // add a divider
+                    .padding(.horizontal)
+                    .padding(.vertical)
                 
                 /**
                  BEGIN DATE/CALENDAR LOGIC
                  */
                 HStack {
                     Text("Start Date")
-                        .fontWeight(.medium)
                 }
                 //.frame(maxWidth: .infinity, alignment: .leading) //<-- Here
                 
+            
                 
                 DatePicker("Enter your date", selection: $pickedDate, in: ...Date())
                     .datePickerStyle(GraphicalDatePickerStyle())
@@ -93,6 +96,7 @@ struct AddView: View {
                             .frame(maxWidth: 200)
                             .background(Color.accentColor)
                             .cornerRadius(10, antialiased: true)
+                            .shadow(radius: 10)
                         
                         Button(action: clearButtonPressed, label: {
                             Text("Clear".uppercased())
@@ -102,6 +106,7 @@ struct AddView: View {
                                 .frame(maxWidth: 200)
                                 .background(Color.gray)
                                 .cornerRadius(10, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                                .shadow(radius: 10)
                         })
                     })
                 }
@@ -111,6 +116,9 @@ struct AddView: View {
         .navigationTitle("Add an activity ✍️")
         .alert(isPresented: $showAlert, content: getAlert)
     }
+    
+    /// END USER INTERFACE HERE
+    
     /**
      COLOR PICKER CALCULATIONS
      This is where we calculate what color value we want to set it to
