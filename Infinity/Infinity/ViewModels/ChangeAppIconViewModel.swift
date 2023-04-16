@@ -30,9 +30,9 @@ final class ChangeAppIconViewModel: ObservableObject {
         var description: String {
             switch self {
             case .primary:
-                return "Default"
+                return "Infinity"
             case .appIcon2:
-                return "Orange"
+                return "Bold"
             case .appIcon3:
                 return "Ocean"
             }
