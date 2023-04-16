@@ -49,9 +49,12 @@ struct SettingsView: View {
                         
                         
                         // Notification View
+                        // For future release
+                        /*
                         NavigationLink { NotificationView() } label: {
                             Text("🔔 Notifications")
                         }
+                        */
                         
                         
                          
