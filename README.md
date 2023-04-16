@@ -7,6 +7,28 @@ Infinity is designed to be streak/goal tracker and help the user keep track of h
 
 It is designed to be easy to use and stay out of the way.
 
+## Features
+
+- Clean and simple goal tracker
+- No ads
+- No tracking
+- All data is stored locally (100% open source)
+- Motivational and inspirational notifications
+- Reminders to never give up (custom notifications)
+
+## screenshots
+
+### iPhone
+
+Note: These are outdated for iPhone, this will change in final release.
+
+<img src="Screenshots/1.png" width="30%"> <img src="Screenshots/2.png" width="30%"> <img src="Screenshots/3.png" width="30%">
+
+### iPad
+
+<img src="Screenshots/1-ipad.png" width="80%"> 
+<img src="Screenshots/2-ipad.png" width="80%"> 
+
 ## What is the difference between "infinity" and "infinity-app" repo?
 
 Originally, I was developing the app on the iPad using Swift Playgrounds and it is working nicely however, sometimes I want to simulate the app on different screen sizes but also take advantage of Xcode's advanced features.
