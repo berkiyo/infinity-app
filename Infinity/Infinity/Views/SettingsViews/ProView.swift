@@ -104,7 +104,7 @@ struct ProView: View {
                         .foregroundColor(.white)
                         .cornerRadius(22)
 
-                        Text("Cancel anytime.")
+                        Text("Cancel Anytime. Family Sharing Included.")
                             .font(.caption)
                             .padding(.top, 5)
                         
@@ -112,7 +112,10 @@ struct ProView: View {
                         
                         // Restore purchases
                         Button(action: {
-                            print("Restore Purchases Tapped!")
+                            Task {
+                                // This will restore the purchased items for the user.
+                                try? await AppStore.sync()
+                            }
                         }) {
                             Text("Restore Purchases")
                                 .font(.caption)
