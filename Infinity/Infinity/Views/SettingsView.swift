@@ -24,7 +24,7 @@ struct SettingsView: View {
                         
                         
                         // Icon Changer View
-                        NavigationLink { ChangeIconView() } label: {
+                        NavigationLink { ChangeAppIconView() } label: {
                             Text("📱 Change App Icon (Pro)")
                         }
                         .disabled(storeVM.purchasedSubscriptions.isEmpty)
