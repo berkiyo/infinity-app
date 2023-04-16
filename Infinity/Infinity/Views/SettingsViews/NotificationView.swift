@@ -9,7 +9,7 @@ struct NotificationView: View {
     @State private var textFieldTitle: String = ""
     @State private var textFieldMessage: String = ""
     @State private var currentDate = Date()
-    @State private var repeatOn = false
+    @State private var repeatState = false
 
 
     
@@ -56,7 +56,7 @@ struct NotificationView: View {
                 /**
                  Toggle goes here
                  */
-                Toggle("Repeat notification", isOn: $repeatOn)
+                Toggle("Repeat notification", isOn: $repeatState)
                     .padding(14)
                     .toggleStyle(SwitchToggleStyle(tint: .accentColor))
                 
@@ -96,12 +96,17 @@ struct NotificationView: View {
     
     func scheduleNotification() {
         let content = UNMutableNotificationContent()
-        content.title = "Feed the cat"
-        content.subtitle = "It looks hungry"
+        content.title = textFieldTitle
+        content.subtitle = textFieldMessage
         content.sound = UNNotificationSound.default
+        
+        //var notifTime: Date
+        let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: currentDate)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: repeatState)
 
         // show this notification five seconds from now
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        // For testing:
+        // let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
 
         // choose a random identifier
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
@@ -109,6 +114,8 @@ struct NotificationView: View {
         // add our notification request
         UNUserNotificationCenter.current().add(request)
     }
+    
+    //func convertDate
     
     func clearButtonPressed() {
         textFieldTitle = ""
