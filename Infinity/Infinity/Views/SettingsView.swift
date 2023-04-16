@@ -24,6 +24,7 @@ struct SettingsView: View {
                         
                         
                         // Icon Changer View
+                        // Pro Feature
                         NavigationLink { ChangeAppIconView() } label: {
                             Text("📱 Change App Icon (Pro)")
                         }
@@ -42,6 +43,7 @@ struct SettingsView: View {
                         
                         
                         // Quotes View
+                        // Pro Feature
                         NavigationLink { QuotesView() } label: {
                             Text("😤 Motivational Quotes (Pro)")
                         }
@@ -49,14 +51,11 @@ struct SettingsView: View {
                         
                         
                         // Notification View
-                        // For future release
-                        /*
+                        // Pro Feature
                         NavigationLink { NotificationView() } label: {
-                            Text("🔔 Notifications")
+                            Text("🔔 Custom Notifications (Pro)")
                         }
-                        */
-                        
-                        
+                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
                          
                         // About View
                         NavigationLink { AboutView() } label: {
@@ -72,10 +71,54 @@ struct SettingsView: View {
                         Button("⭐️ Leave a review") {
                             requestReview()
                         }
+                        
+                        // DEV PURPOSES
+                        // For API Scraping
+                        Button("Ping Quote") {
+                            Task {
+                                do {
+                                    try await getQuotes()
+                                } catch {
+                                    print("Error, please try again.", error)
+                                }
+                            }
+                        }
+                        
+                        // Just running some tests
+                        
+                        
                     }
                 }
             }
         }
+    }
+    
+    /**
+     getQuotes()
+     This is used for getting the quotes from the internet.
+     For the API, we are using "https://api.goprogram.ai/inspiration/" as it is open.
+     We want this behaviour:
+     
+     - fetch quotes periodically
+     - send out notifications periodically (user decides)
+     - This can work with the widget
+     */
+    
+    func getQuotes() async throws {
+        
+        struct Quote: Decodable {
+            var quote: String
+            var author: String
+        }
+        
+        guard let url = URL(string: "https://api.goprogram.ai/inspiration/") else { fatalError("Unable to fetch quote, please try again later.") }
+            let urlRequest = URLRequest(url: url)
+            let (data, response) = try await URLSession.shared.data(for: urlRequest)
+
+            guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data")
+            }
+        let decodedFood = try JSONDecoder().decode(Quote.self, from: data)
+        print(decodedFood)
     }
     
 }
