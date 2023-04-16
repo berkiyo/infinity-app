@@ -9,9 +9,16 @@ struct ChangeAppIconView: View {
 
     var body: some View {
         VStack {
-            Text("Custom App Icon Picker!")
-                .font(.title.bold())
-                .padding(.bottom, 22)
+            VStack {
+                Text("Custom App Icon Picker!")
+                    .font(.title.bold())
+                    .padding(.bottom, 22)
+                
+                Text("Want to spice things up? You can change the app icon here.")
+                    .font(.body)
+                    .padding(.bottom, 22)
+            }
+            .padding(.horizontal, 30)
             
             ScrollView {
                 VStack(spacing: 11) {
@@ -37,8 +44,8 @@ struct ChangeAppIconView: View {
                         }
                     }
                 }
-                .padding(.horizontal)
-                .padding(.vertical, 40)
+                .padding(.horizontal, 30)
+                .padding(.bottom, 40)
             }
         }
     }

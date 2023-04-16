@@ -44,11 +44,14 @@ struct SettingsView: View {
                         
                         // Quotes View
                         // Pro Feature
+                        // This will come in the next version, for now, we'll focus on cleanup.
+                        /*
                         NavigationLink { QuotesView() } label: {
                             Text("😤 Motivational Quotes (Pro)")
                         }
                         .disabled(storeVM.purchasedSubscriptions.isEmpty)
-                        
+                         
+                        */
                         
                         // Notification View
                         // Pro Feature
@@ -74,6 +77,7 @@ struct SettingsView: View {
                         
                         // DEV PURPOSES
                         // For API Scraping
+                        /*
                         Button("Ping Quote") {
                             Task {
                                 do {
@@ -83,7 +87,7 @@ struct SettingsView: View {
                                 }
                             }
                         }
-                        
+                        */
                         // Just running some tests
                         
                         
