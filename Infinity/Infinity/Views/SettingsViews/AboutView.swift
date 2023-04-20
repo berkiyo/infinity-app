@@ -19,7 +19,7 @@ struct AboutView: View {
                 
                 Spacer()
                 
-                Text("Made with ❤️ by Tekbyte.")
+                Text("Made with ❤️ by Berkiyo.")
                 
                 Spacer()
                 

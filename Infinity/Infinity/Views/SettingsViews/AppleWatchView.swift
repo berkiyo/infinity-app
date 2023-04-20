@@ -1,6 +1,7 @@
 import SwiftUI
 
 // For future release.
+// Not implemented yet. To be continued.
 
 struct AppleWatchView: View {
     var body: some View {

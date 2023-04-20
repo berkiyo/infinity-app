@@ -1,5 +1,9 @@
 import SwiftUI
 
+// For future release.
+// Not implemented yet. To be continued.
+
+
 struct QuotesView: View {
     var body: some View {
         ZStack {
