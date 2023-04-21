@@ -1,5 +1,6 @@
 // All working nicely!
 // Huge thanks to --> https://www.avanderlee.com/swift/alternate-app-icon-configuration-in-xcode/
+// ChangeAppIcon
 
 import SwiftUI
 
