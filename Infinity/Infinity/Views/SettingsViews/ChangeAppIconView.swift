@@ -45,32 +45,35 @@ struct ChangeAppIconView: View {
                     }
                 }
                 .padding(.horizontal, 30)
-                .padding(.bottom, 40)
+                .padding(.bottom, 5)
+                
+                VStack {
+                    Text("Have a cool app icon design you want to share? Send an email!")
+                        .font(.body)
+                        .padding(5)
+                    
+                    Button(action: {
+                        Task {
+                            Link("✉️ Give Feedback", destination: URL(string: "mailto:qwerty@tekbyte.net")!)
+                        }
+                    }) {
+                        VStack {
+                            Text("Submit Feedback")
+                                .bold()
+                        }
+                    }
+                    .padding()
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(22)
+                    .shadow(radius: 10)
             }
             
             Spacer()
             
-            VStack {
-                Text("Have a cool app icon design you want to share? Send an email!")
-                    .font(.body)
-                    .padding(.bottom, 22)
-                
-                Button(action: {
-                    Task {
-                        Link("✉️ Give Feedback", destination: URL(string: "mailto:qwerty@tekbyte.net")!)
-                    }
-                }) {
-                    VStack {
-                        Text("Submit Feedback")
-                            .bold()
-                    }
-                }
-                .padding()
-                .background(.blue)
-                .foregroundColor(.white)
-                .cornerRadius(22)
-                .shadow(radius: 10)
+            
             }
+            .padding(.bottom, 10)
         }
     }
 }

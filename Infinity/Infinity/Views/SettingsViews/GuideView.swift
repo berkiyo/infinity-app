@@ -17,7 +17,7 @@ struct GuideView: View {
                 
                 Text("Infinity is designed to stay out of your way and let you track your goals, that's it!")
                     .padding()
-
+ 
                 Spacer()
             }
             .padding()
