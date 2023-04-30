@@ -30,7 +30,6 @@ struct InfinityApp: App {
     
     // the body
     var body: some Scene {
-        // TODO: Have iPad and iPhone support
         WindowGroup {
             NavigationView {
                 HomeView()

@@ -68,7 +68,8 @@ struct ChangeAppIconView: View {
                     .foregroundColor(.white)
                     .cornerRadius(22)
                     .shadow(radius: 10)
-            }
+                }
+                .padding()
             
             Spacer()
             

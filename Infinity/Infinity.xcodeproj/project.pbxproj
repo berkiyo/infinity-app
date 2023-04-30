@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60611C7929E6C258005CF452 /* AppIcon-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7629E6C258005CF452 /* AppIcon-3.jpg */; };
-		60611C7A29E6C258005CF452 /* AppIcon-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7729E6C258005CF452 /* AppIcon-2.jpg */; };
-		60611C7B29E6C258005CF452 /* AppIcon-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C7829E6C258005CF452 /* AppIcon-1.jpg */; };
 		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
 		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
 		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
 		60611C8429EA657D005CF452 /* infinity.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 60611C8329EA657D005CF452 /* infinity.storekit */; };
 		60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8529EA66EE005CF452 /* StoreViewModel.swift */; };
 		60611C8829EBA265005CF452 /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */; };
-		60611C8C29EC0319005CF452 /* AppIcon-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60611C8B29EC0319005CF452 /* AppIcon-4.jpg */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
@@ -38,6 +34,10 @@
 		60DB3EA129D062D70031E383 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3EA029D062D70031E383 /* PlaceholderView.swift */; };
 		60DB3EA329D062E40031E383 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3EA229D062E40031E383 /* SettingsView.swift */; };
 		60DB3EA529D062FC0031E383 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3EA429D062FC0031E383 /* SplashScreenView.swift */; };
+		60EAE90E29FE113400F3F867 /* AppIcon-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EAE90A29FE113300F3F867 /* AppIcon-4.png */; };
+		60EAE90F29FE113400F3F867 /* AppIcon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EAE90B29FE113400F3F867 /* AppIcon-2.png */; };
+		60EAE91029FE113400F3F867 /* AppIcon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EAE90C29FE113400F3F867 /* AppIcon-3.png */; };
+		60EAE91129FE113400F3F867 /* AppIcon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EAE90D29FE113400F3F867 /* AppIcon-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,16 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60611C7629E6C258005CF452 /* AppIcon-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AppIcon-3.jpg"; sourceTree = "<group>"; };
-		60611C7729E6C258005CF452 /* AppIcon-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AppIcon-2.jpg"; sourceTree = "<group>"; };
-		60611C7829E6C258005CF452 /* AppIcon-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AppIcon-1.jpg"; sourceTree = "<group>"; };
 		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
 		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
 		60611C8329EA657D005CF452 /* infinity.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = infinity.storekit; sourceTree = "<group>"; };
 		60611C8529EA66EE005CF452 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
-		60611C8B29EC0319005CF452 /* AppIcon-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "AppIcon-4.jpg"; path = "../../../../../../Pictures/Icons/Infinity/AppIcon-4.jpg"; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -93,6 +89,10 @@
 		60DB3EA029D062D70031E383 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		60DB3EA229D062E40031E383 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		60DB3EA429D062FC0031E383 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		60EAE90A29FE113300F3F867 /* AppIcon-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-4.png"; sourceTree = "<group>"; };
+		60EAE90B29FE113400F3F867 /* AppIcon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-2.png"; sourceTree = "<group>"; };
+		60EAE90C29FE113400F3F867 /* AppIcon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-3.png"; sourceTree = "<group>"; };
+		60EAE90D29FE113400F3F867 /* AppIcon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +123,10 @@
 		60611C7529E6BED5005CF452 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				60611C7829E6C258005CF452 /* AppIcon-1.jpg */,
-				60611C7729E6C258005CF452 /* AppIcon-2.jpg */,
-				60611C7629E6C258005CF452 /* AppIcon-3.jpg */,
-				60611C8B29EC0319005CF452 /* AppIcon-4.jpg */,
+				60EAE90D29FE113400F3F867 /* AppIcon-1.png */,
+				60EAE90B29FE113400F3F867 /* AppIcon-2.png */,
+				60EAE90C29FE113400F3F867 /* AppIcon-3.png */,
+				60EAE90A29FE113300F3F867 /* AppIcon-4.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -353,13 +353,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60611C7929E6C258005CF452 /* AppIcon-3.jpg in Resources */,
-				60611C7A29E6C258005CF452 /* AppIcon-2.jpg in Resources */,
 				60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */,
-				60611C8C29EC0319005CF452 /* AppIcon-4.jpg in Resources */,
-				60611C7B29E6C258005CF452 /* AppIcon-1.jpg in Resources */,
+				60EAE91129FE113400F3F867 /* AppIcon-1.png in Resources */,
+				60EAE90F29FE113400F3F867 /* AppIcon-2.png in Resources */,
+				60EAE91029FE113400F3F867 /* AppIcon-3.png in Resources */,
 				60611C8429EA657D005CF452 /* infinity.storekit in Resources */,
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
+				60EAE90E29FE113400F3F867 /* AppIcon-4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
