@@ -9,7 +9,7 @@ struct NoItemsView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Good day! There are no tasks.")
+                Text("Good day! There are no goals.")
                     .font(.title)
                     .fontWeight(.semibold)
                     .padding(40)
