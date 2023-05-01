@@ -18,17 +18,19 @@ struct SettingsView: View {
                         
                         
                         // Pro View
+                        // Removed, will probably add it in a later version.
+                        /*
                          NavigationLink { ProView() } label: {
                          Text("💎 Infinity Pro")
                          }
-                        
+                        */
                         
                         // Icon Changer View
                         // Pro Feature
                         NavigationLink { ChangeAppIconView() } label: {
-                            Text("📱 Change App Icon (Pro)")
+                            Text("📱 Change App Icon")
                         }
-                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        //.disabled(storeVM.purchasedSubscriptions.isEmpty)
                         
                         
                         
@@ -56,9 +58,9 @@ struct SettingsView: View {
                         // Notification View
                         // Pro Feature
                         NavigationLink { NotificationView() } label: {
-                            Text("🔔 Custom Notifications (Pro)")
+                            Text("🔔 Custom Notifications")
                         }
-                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        //.disabled(storeVM.purchasedSubscriptions.isEmpty)
                          
                         // About View
                         NavigationLink { AboutView() } label: {
