@@ -49,9 +49,9 @@ struct SettingsView: View {
                         // This will come in the next version, for now, we'll focus on cleanup.
                         
                         NavigationLink { QuotesView() } label: {
-                            Text("😤 Motivational Quotes (Pro)")
+                            Text("😤 Quotes (Coming soon)")
                         }
-                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        .disabled(true)
                         
                         // Notification View
                         // Pro Feature
