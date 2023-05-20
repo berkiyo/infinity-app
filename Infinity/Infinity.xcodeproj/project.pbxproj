@@ -13,6 +13,7 @@
 		60611C8429EA657D005CF452 /* infinity.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 60611C8329EA657D005CF452 /* infinity.storekit */; };
 		60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8529EA66EE005CF452 /* StoreViewModel.swift */; };
 		60611C8829EBA265005CF452 /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */; };
+		60929EAC2A18646500E4AF37 /* ExpandableButtonPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EAB2A18646500E4AF37 /* ExpandableButtonPanelView.swift */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		60611C8329EA657D005CF452 /* infinity.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = infinity.storekit; sourceTree = "<group>"; };
 		60611C8529EA66EE005CF452 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
+		60929EAB2A18646500E4AF37 /* ExpandableButtonPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableButtonPanelView.swift; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			path = StoreKit;
 			sourceTree = "<group>";
 		};
+		60929EAA2A18645300E4AF37 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				60929EAB2A18646500E4AF37 /* ExpandableButtonPanelView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		60DB3E4F29D061080031E383 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		60DB3E8629D061CB0031E383 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60929EAA2A18645300E4AF37 /* Button */,
 				60DB3E8D29D062400031E383 /* SettingsViews */,
 				60DB3E9629D0628E0031E383 /* AddView.swift */,
 				60DB3E9829D0629C0031E383 /* HomeView.swift */,
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB3E8A29D061FC0031E383 /* ItemModel.swift in Sources */,
+				60929EAC2A18646500E4AF37 /* ExpandableButtonPanelView.swift in Sources */,
 				60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */,
 				60DB3E9729D0628E0031E383 /* AddView.swift in Sources */,
 				60DB3E9929D0629C0031E383 /* HomeView.swift in Sources */,

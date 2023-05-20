@@ -91,10 +91,10 @@ struct SettingsView: View {
                         // Just running some tests
                         
                         
-                    }
-                }
-            }
-        }
+                    } // END LIST
+                } // END NAVSTACK
+            } // END VSTACK
+        } // END ZSTACK
     }
     
     /**

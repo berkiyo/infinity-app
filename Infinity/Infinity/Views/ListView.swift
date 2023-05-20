@@ -10,6 +10,9 @@ struct ListView: View {
     @State var isEditing = false
     @State var isModal: Bool = false
     
+    
+    
+    
     /**
      Start Body
      */
@@ -26,20 +29,52 @@ struct ListView: View {
                     ForEach(listViewModel.items) {
                         item in ListRowView(item: item)
                             .onTapGesture {
-                                /**
-                                 This is currently working as a manual sync button, this will be replaced in time to be automatic and run like a CRON.
-                                 */
+                                self.showingAlert = true
                                 withAnimation(.linear) {
                                     listViewModel.updateItem(item: item) // update item
                                 }
                             }
                     }
                     .onDelete(perform: listViewModel.deleteItem) // all from "ListViewModel.swift"
-                }
+                    .toolbar {
+                        EditButton()
+                    }
+                    .alert(isPresented:$showingAlert) { // SHOW ALERT TO RESET STREAK
+                        Alert(
+                            title: Text("Do you want to reset your streak?"),
+                            message: Text("This can't be undone."),
+                            primaryButton: .destructive(Text("Reset")) {
+                                print("Streak reset")
+                            },
+                            secondaryButton: .cancel()
+                        )
+                    }
+                } // END LIST
                 .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive))
-            }
-        }
+            } // END ELSE
+            
+            // BUTTON
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    ExpandableButtonPanelView(
+                      primaryItem: ExpandableButtonItem(label: "♾️"), // No action
+                      secondaryItems: [
+                        ExpandableButtonItem(label: "✏️") {
+                          // Can add action, if necessary
+                        },
+                        ExpandableButtonItem(label: "➕") {
+                          // Can add action, if necessary
+                        }
+                      ]
+                    )
+                }// END HSTACK
+                .padding()
+            } // END VSTACK
+        } // END ZSTACK
         .navigationTitle("Infinity")
+        /*
         .navigationBarItems(
             leading:
                 Button(action: {
@@ -52,6 +87,7 @@ struct ListView: View {
                     NavigationLink("➕", destination: AddView().environmentObject(listViewModel))
                 }
         )
+         */
     }
     
 
