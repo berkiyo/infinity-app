@@ -5,11 +5,11 @@ struct ListView: View {
     
     // See --> "ListViewModel.swift"
     @EnvironmentObject var listViewModel: ListViewModel
-    
+    @State var isPresenting = false
     @State private var showingAlert = false // this is for our alertview.
     @State var isEditing = false
     @State var isModal: Bool = false
-    
+    @State private var showingSheet = false // for sheet view
     
     
     
@@ -36,9 +36,6 @@ struct ListView: View {
                             }
                     }
                     .onDelete(perform: listViewModel.deleteItem) // all from "ListViewModel.swift"
-                    .toolbar {
-                        EditButton()
-                    }
                     .alert(isPresented:$showingAlert) { // SHOW ALERT TO RESET STREAK
                         Alert(
                             title: Text("Do you want to reset your streak?"),
@@ -58,17 +55,26 @@ struct ListView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    ExpandableButtonPanelView(
-                      primaryItem: ExpandableButtonItem(label: "♾️"), // No action
-                      secondaryItems: [
-                        ExpandableButtonItem(label: "✏️") {
-                          // Can add action, if necessary
-                        },
-                        ExpandableButtonItem(label: "➕") {
-                          // Can add action, if necessary
-                        }
-                      ]
-                    )
+                    Button(action: {
+                        showingSheet.toggle()
+                    }, label: {
+                        Text("+")
+                        .font(.system(.largeTitle))
+                        .frame(width: 77, height: 70)
+                        .foregroundColor(Color.white)
+                        .padding(.bottom, 7)
+                    })
+                    .background(Color.blue)
+                    .cornerRadius(38.5)
+                    .padding()
+                    .shadow(color: Color.black.opacity(0.3),
+                            radius: 3,
+                            x: 3,
+                            y: 3)
+                    .sheet(isPresented: $showingSheet) {
+                                AddView()
+                            }
+        
                 }// END HSTACK
                 .padding()
             } // END VSTACK

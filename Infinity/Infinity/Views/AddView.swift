@@ -1,6 +1,8 @@
 import SwiftUI
 import Foundation
 
+
+
 extension String {
     func removeNewLines(_ delimiter: String = "") -> String {
         self.replacingOccurrences(of: "\n", with: delimiter)
@@ -10,6 +12,7 @@ extension String {
 struct AddView: View {
     
     @Environment(\.presentationMode) var presentationMode // telling us where we are in the view hierarchy
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
     
@@ -158,6 +161,7 @@ struct AddView: View {
             
             listViewModel.addItem(title: textFieldText, theDate: Int(diffs.day!), theStartDate: pickedDate, theColor: colorConverter())
             presentationMode.wrappedValue.dismiss() // go back one in the presentation view hierarchy.
+            dismiss()
         }
         
     }

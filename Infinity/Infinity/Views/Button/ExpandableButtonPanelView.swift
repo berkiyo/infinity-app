@@ -21,7 +21,7 @@ struct ExpandableButtonPanelView: View {
   private let noop: () -> Void = {}
   private let size: CGFloat = 75
   private var cornerRadius: CGFloat {
-    get { size / 2 }
+    get { size / 1 }
   }
   private let shadowColor = Color.black.opacity(0.4)
   private let shadowPosition: (x: CGFloat, y: CGFloat) = (x: 2, y: 2)
@@ -36,8 +36,11 @@ struct ExpandableButtonPanelView: View {
           .frame(
             width: self.isExpanded ? self.size : 0,
             height: self.isExpanded ? self.size : 0)
+          
       }
-
+      
+        
+      
       Button(primaryItem.label, action: {
         withAnimation {
           self.isExpanded.toggle()
@@ -46,9 +49,9 @@ struct ExpandableButtonPanelView: View {
       })
       .frame(width: size, height: size)
     }
-    .background(Color(UIColor.systemOrange))
+    .background(Color(UIColor.darkGray))
     .cornerRadius(cornerRadius)
-    .font(.title)
+    //.font(.title)
     .shadow(
       color: shadowColor,
       radius: shadowRadius,
