@@ -72,7 +72,7 @@ struct ProView: View {
                             }
                         }) {
                             VStack {
-                                Text("Subscribe for $2.99 monthly")
+                                Text("Subscribe for $2.99 AUD monthly")
                                     .bold()
                             }
                             
@@ -96,7 +96,7 @@ struct ProView: View {
                             }
                         }) {
                             VStack {
-                                Text("Subscribe for $17.99 yearly")
+                                Text("Subscribe for $17.99 AUD yearly")
                                     .bold()
                                 Text("Save 50% off monthly + 7 day trial included")
                                     .font(.caption)
@@ -108,6 +108,10 @@ struct ProView: View {
                         .foregroundColor(.white)
                         .cornerRadius(22)
                         .shadow(radius: 10)
+                        
+                        Text("Price in AUD. Cost will be converted to your local currency during checkout.")
+                            .font(.caption)
+                            .padding(.top, 5)
 
                         Text("Cancel Anytime. Family Sharing Included.")
                             .font(.caption)

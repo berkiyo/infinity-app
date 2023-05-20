@@ -19,48 +19,46 @@ struct SettingsView: View {
                         
                         // Pro View
                         // Removed, will probably add it in a later version.
-                        /*
+                        
                          NavigationLink { ProView() } label: {
                          Text("💎 Infinity Pro")
                          }
-                        */
+                        
                         
                         // Icon Changer View
                         // Pro Feature
                         NavigationLink { ChangeAppIconView() } label: {
                             Text("📱 Change App Icon")
                         }
-                        //.disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
                         
                         
                         
                         // Apple Watch Complications View
                         // For future release
-                        /*
+                        
                         NavigationLink { AppleWatchView() } label: {
-                            Text("⌚️ Apple Watch Complications (Pro)")
+                            Text("⌚️ Apple Watch (Coming soon)")
                         }
-                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
-                        */
+                        .disabled(true)
+                        
                         
                         
                         // Quotes View
                         // Pro Feature
                         // This will come in the next version, for now, we'll focus on cleanup.
-                        /*
+                        
                         NavigationLink { QuotesView() } label: {
                             Text("😤 Motivational Quotes (Pro)")
                         }
                         .disabled(storeVM.purchasedSubscriptions.isEmpty)
-                         
-                        */
                         
                         // Notification View
                         // Pro Feature
                         NavigationLink { NotificationView() } label: {
                             Text("🔔 Custom Notifications")
                         }
-                        //.disabled(storeVM.purchasedSubscriptions.isEmpty)
+                        .disabled(storeVM.purchasedSubscriptions.isEmpty)
                          
                         // About View
                         NavigationLink { AboutView() } label: {
@@ -69,7 +67,7 @@ struct SettingsView: View {
                         
                         
                         // Feedback Hyperlink (Email)
-                        Link("✉️ Give Feedback", destination: URL(string: "mailto:qwerty@tekbyte.net")!)
+                        Link("✉️ Give Feedback", destination: URL(string: "mailto:mail@berkdogan.com")!)
                         
                         
                         // Review prompt
