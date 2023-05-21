@@ -64,6 +64,11 @@ struct NotificationView: View {
                     .padding(.horizontal)
                     .padding(.vertical)
                 
+                
+                Button(action: requestPermission, label: {
+                    Text("Request Permission")
+                })
+                
                 HStack {
                     Button(action: scheduleNotification, label: {
                         Text("Schedule".uppercased())

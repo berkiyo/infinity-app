@@ -28,7 +28,7 @@ struct SettingsView: View {
                         // Icon Changer View
                         // Pro Feature
                         NavigationLink { ChangeAppIconView() } label: {
-                            Text("📱 Change App Icon")
+                            Text("📱 Change App Icon (Pro)")
                         }
                         .disabled(storeVM.purchasedSubscriptions.isEmpty)
                         
@@ -56,7 +56,7 @@ struct SettingsView: View {
                         // Notification View
                         // Pro Feature
                         NavigationLink { NotificationView() } label: {
-                            Text("🔔 Custom Notifications")
+                            Text("🔔 Custom Notifications (Pro)")
                         }
                         .disabled(storeVM.purchasedSubscriptions.isEmpty)
                          

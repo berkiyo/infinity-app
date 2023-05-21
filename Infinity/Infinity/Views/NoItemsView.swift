@@ -13,6 +13,16 @@ struct NoItemsView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                     .padding(40)
+                
+                Text("To get started, tap on the circle icon to add a goal or habit you want to track.")
+                    .font(.body)
+                    .padding(20)
+                
+                Image("habits")
+                    .resizable()
+                    .scaledToFit()
+                
+                /*
                 NavigationLink(
                     destination: AddView().environmentObject(listViewModel),
                     label: {
@@ -29,6 +39,7 @@ struct NoItemsView: View {
                 .padding(.horizontal, animate ? 40 : 50)
                 .scaleEffect(animate ? 1.1: 1.0)
                 .offset(y: animate ? -7 : 0)
+                 */
             }
             .multilineTextAlignment(.center)
             .padding(40)

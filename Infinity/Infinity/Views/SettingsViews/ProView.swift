@@ -109,9 +109,10 @@ struct ProView: View {
                         .cornerRadius(22)
                         .shadow(radius: 10)
                         
-                        Text("Price in AUD. Cost will be converted to your local currency during checkout.")
+                        Text("Price in AUD. Price subject to change at checkout.")
                             .font(.caption)
                             .padding(.top, 5)
+                    
 
                         Text("Cancel Anytime. Family Sharing Included.")
                             .font(.caption)
@@ -146,6 +147,10 @@ struct ProView: View {
                         .padding(.bottom, 20)
                     Text("Thank you for your support.")
                         .font(.title2)
+                    
+                    Image("thankyou")
+                        .resizable()
+                        .scaledToFit()
                 }
             }
             
