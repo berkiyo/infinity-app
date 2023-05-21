@@ -22,7 +22,7 @@ It is designed to be easy to use and stay out of the way.
 
 Note: These are outdated for iPhone, this will change in final release when published to Test Flight/App Store.
 
-<img src="Screenshots/1.png" width="30%"> <img src="Screenshots/2.png" width="30%"> <img src="Screenshots/3.png" width="30%">
+<img src="Screenshots/photo-1.png" width="30%"> <img src="Screenshots/photo-2.png" width="30%"> <img src="Screenshots/photo-3.png" width="30%"> <img src="Screenshots/photo-4.png" width="30%"> <img src="Screenshots/photo-5.png" width="30%">
 
 ### iPad
 
