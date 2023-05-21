@@ -9,12 +9,16 @@ struct NoItemsView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text("Good day! There are no goals.")
+                Text("Hello there!")
                     .font(.title)
                     .fontWeight(.semibold)
-                    .padding(40)
+                    .padding(30)
                 
-                Text("To get started, tap on the circle icon to add a goal or habit you want to track.")
+                Text("Add a goal to get started.")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                
+                Text("Tap on the circle icon to add a goal or habit you want to track.")
                     .font(.body)
                     .padding(20)
                 

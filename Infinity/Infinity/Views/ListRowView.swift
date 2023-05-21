@@ -49,8 +49,13 @@ struct ListRowView: View {
             // if user says I want a progress bar, show it, else don't show it (this is from AddView but needs to be stored into "item" model
             // Add a progress bar
             
+            if item.progressBarState {
+                ProgressView("", value: Double(diffsString), total: Double(item.progressBarLength))
+            }
+            else {
+                // don't show progress bar
+            }
             
-            ProgressView("", value: Double(diffsString), total: 24)
         }
         
     }
