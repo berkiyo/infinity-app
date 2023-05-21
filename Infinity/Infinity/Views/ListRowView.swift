@@ -13,32 +13,46 @@ struct ListRowView: View {
         // see if hour
         let diffs = Calendar.current.dateComponents([.day], from: item.theStartDate, to: Date.now)
         let diffsString = "\(diffs.day!)"
+        //let diffsStringHour = "\(diffs.minute!)" ?? "0"
         
         // View begins here
-        HStack {
-            
-            /**
-             The Design
-             * User picks emoji for their goal
-             * [icon/colour] [name of goal] ------- [date information vstack]
-             */
-            Circle()
-                .frame(width: 30, height: 30)
-                .foregroundColor(colorConverter())
-            Text(item.title)
-            Spacer()
-            VStack(alignment: .trailing){
-                let dateStored = String(item.theDate)
+        VStack {
+            HStack {
                 
-            
-                Text(diffsString + " days")
+                /**
+                 The Design
+                 * User picks emoji for their goal
+                 * [icon/colour] [name of goal] ------- [date information vstack]
+                 */
+                Circle()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(colorConverter())
+                Text(item.title)
+                Spacer()
                 
-                Text("Since: " + item.theStartDate.formatted())
-                    .font(.caption)
                 
+                VStack(alignment: .trailing){
+                    let dateStored = String(item.theDate)
+                    
+                    
+
+                    Text(diffsString + " days")
+                    
+                    Text("Since: " + item.theStartDate.formatted())
+                        .font(.caption)
+                    
+                }
             }
+            .padding(.vertical, 8)
+            
+            // PROGRESSBAR
+            // if user says I want a progress bar, show it, else don't show it (this is from AddView but needs to be stored into "item" model
+            // Add a progress bar
+            
+            
+            ProgressView("", value: Double(diffsString), total: 24)
         }
-        .padding(.vertical, 8)
+        
     }
     
     /**

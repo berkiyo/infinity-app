@@ -55,7 +55,7 @@ struct ChangeAppIconView: View {
                     
                     Button(action: {
                         Task {
-                            Link("✉️ Give Feedback", destination: URL(string: "mailto:qwerty@tekbyte.net")!)
+                            Link("✉️ Give Feedback", destination: URL(string: "mailto:mail@berkdogan.com")!)
                         }
                     }) {
                         VStack {

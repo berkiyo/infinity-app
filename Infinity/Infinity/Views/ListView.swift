@@ -10,13 +10,13 @@ struct ListView: View {
     @State var isModal: Bool = false
     @State var show = false
     @State var editMode = EditMode.inactive
-
     
     
     /**
      Start Body
      */
     var body: some View {
+        
         
         
         ZStack {

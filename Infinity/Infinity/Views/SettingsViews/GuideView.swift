@@ -15,6 +15,10 @@ struct GuideView: View {
                 Text("This app will let you set reoccuring reminders as well which you can set to a personalised message.")
                     .padding()
                 
+                Image("habits")
+                    .resizable()
+                    .scaledToFit()
+                
                 Text("Infinity is designed to stay out of your way and let you track your goals, that's it!")
                     .padding()
  

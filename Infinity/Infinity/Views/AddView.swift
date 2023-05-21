@@ -27,6 +27,10 @@ struct AddView: View {
     // For color picker
     @State private var selectedColor: Color = .red
     
+    // For slider/picker thingy
+    @State private var number: Int = 1
+    @State private var theGoalState: Bool = false //(false = no goal, don't show progress bar), (true = show goal and progress bar)
+
     var body: some View {
         
         /**
@@ -34,6 +38,12 @@ struct AddView: View {
          */
         ScrollView {
             VStack {
+                
+                Text("Add a goal")
+                    .font(.title3)
+                    .fontWeight(.medium)
+                
+                
                 TextField("Streak name (e.g. junk food)", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55)
@@ -45,24 +55,25 @@ struct AddView: View {
                     .padding(.horizontal)
                     .padding(.vertical)
                 
-                Text("Pick your color")
-                    .fontWeight(.medium)
-                
-                // COLOR PICKER
-                ColorPickerView(selectedColor: $selectedColor)
-                    .padding(.horizontal, 5)
-                    .padding(.bottom, 50)
-                
-                
-                HStack {
-                    Text("Selected Color")
-                        .padding(.vertical)
-                    Circle()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(selectedColor)
+                VStack {
+                    Text("Pick your color")
+                        .fontWeight(.medium)
+                    
+                    // COLOR PICKER
+                    ColorPickerView(selectedColor: $selectedColor)
+                        .padding(.horizontal, 5)
+                        .padding(.bottom, 50)
+                    
+                    
+                    HStack {
+                        Text("Selected Color")
+                            .padding(.vertical)
+                        Circle()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(selectedColor)
+                    }
+                    .padding(.vertical, 2)
                 }
-                .padding(.vertical, 2)
-                
                 
                 Divider() // add a divider
                     .padding(.horizontal)
@@ -113,6 +124,29 @@ struct AddView: View {
                         })
                     })
                 }
+                
+                // Number of days till goal
+                // [Length (days)] // [slider [forever]]
+                
+                VStack {
+                    Divider()
+                        .padding(.horizontal)
+                        .padding(.vertical)
+                    HStack {
+                        Text("Goal length")
+                        Spacer()
+                        Picker("Goal Length", selection: $number) {
+                            ForEach(1...365, id: \.self) { number in
+                                Text("\(number)")
+                            }
+                        }
+                    }
+                    
+                    Toggle("Show Progress Bar?", isOn: $theGoalState)
+                }
+                .padding(.top, 10)
+                .padding(.bottom, 10)
+                
             }
             .padding(14) // add some padding
         }
@@ -159,7 +193,8 @@ struct AddView: View {
             let diffs = Calendar.current.dateComponents([.day], from: pickedDate, to: todayDate)
             print(diffs.day!)
             
-            listViewModel.addItem(title: textFieldText, theDate: Int(diffs.day!), theStartDate: pickedDate, theColor: colorConverter())
+            listViewModel.addItem(title: textFieldText, theDate: Int(diffs.day!), theStartDate: pickedDate, theColor: colorConverter(),
+                                    progressBarState: theGoalState, progressBarLength: number)
             presentationMode.wrappedValue.dismiss() // go back one in the presentation view hierarchy.
             dismiss()
         }

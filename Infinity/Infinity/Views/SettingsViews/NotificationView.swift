@@ -67,6 +67,8 @@ struct NotificationView: View {
                 
                 Button(action: requestPermission, label: {
                     Text("Request Permission")
+                        .padding(.top, 20)
+                        .padding(.bottom, 30)
                 })
                 
                 HStack {
@@ -123,7 +125,8 @@ struct NotificationView: View {
     func requestPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
-                print("All set!")
+                showingAlert = true
+                print("All set!") // DEBUG
             } else if let error = error {
                 print(error.localizedDescription)
             }

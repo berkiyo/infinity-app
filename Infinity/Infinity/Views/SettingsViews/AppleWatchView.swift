@@ -17,12 +17,12 @@ struct AppleWatchView: View {
                 
                 Spacer()
                 
-                Text("Version 1.0")
+                Text("Version 1.1")
                     .padding()
                 
                 Spacer()
                 
-                Text("Made with ❤️ by Tekbyte.")
+                Text("Made with ❤️ by Berk Dogan.")
                 
                 Spacer()
                 
