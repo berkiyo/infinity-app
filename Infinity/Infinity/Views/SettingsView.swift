@@ -36,23 +36,23 @@ struct SettingsView: View {
                         
                         // Apple Watch Complications View
                         // For future release
-                        
+                        /*
                         NavigationLink { AppleWatchView() } label: {
                             Text("⌚️ Apple Watch (Coming soon)")
                         }
                         .disabled(true)
-                        
+                        */
                         
                         
                         // Quotes View
                         // Pro Feature
                         // This will come in the next version, for now, we'll focus on cleanup.
-                        
+                        /*
                         NavigationLink { QuotesView() } label: {
                             Text("😤 Quotes (Coming soon)")
                         }
                         .disabled(true)
-                        
+                        */
                         // Notification View
                         // Pro Feature
                         NavigationLink { NotificationView() } label: {

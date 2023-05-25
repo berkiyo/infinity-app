@@ -41,9 +41,9 @@
               "locale" : "en_AU"
             }
           ],
-          "productID" : "infinity.pro.monthly",
+          "productID" : "infinity.monthly",
           "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "monthly",
+          "referenceName" : "infinity.monthly",
           "subscriptionGroupID" : "D68ADFFA",
           "type" : "RecurringSubscription"
         },
@@ -75,9 +75,9 @@
               "locale" : "en_AU"
             }
           ],
-          "productID" : "infinity.pro.yearly",
+          "productID" : "infinity.yearly",
           "recurringSubscriptionPeriod" : "P1Y",
-          "referenceName" : "yearly",
+          "referenceName" : "infinity.yearly",
           "subscriptionGroupID" : "D68ADFFA",
           "type" : "RecurringSubscription"
         }

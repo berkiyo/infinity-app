@@ -13,14 +13,14 @@ import StoreKit
 typealias RenewalState = StoreKit.Product.SubscriptionInfo.RenewalState
 
 class StoreViewModel: ObservableObject {
-    // infinity.pro.yearly
-    // infinity.pro.monthly
+    // infinity.yearly
+    // infinity.monthly
     
     @Published private(set) var subscriptions: [Product] = []
     @Published private(set) var purchasedSubscriptions: [Product] = []
     @Published private(set) var subscriptionGroupStatus: RenewalState?
     
-    private let productIDs: [String] = ["infinity.pro.yearly", "infinity.pro.monthly"]
+    private let productIDs: [String] = ["infinity.monthly", "infinity.yearly"]
     
     var updateListenerTask: Task<Void, Error>? = nil
     
