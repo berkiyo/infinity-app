@@ -14,7 +14,7 @@ struct AboutView: View {
                 
                 Spacer()
                 
-                Text("Version 1.1")
+                Text("Version 1.2")
                     .padding()
                 
                 Spacer()

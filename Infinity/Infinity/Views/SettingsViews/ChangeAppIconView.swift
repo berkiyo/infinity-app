@@ -48,6 +48,7 @@ struct ChangeAppIconView: View {
                 .padding(.horizontal, 30)
                 .padding(.bottom, 5)
                 
+                /*
                 VStack {
                     Text("Have a cool app icon design you want to share? Send an email!")
                         .font(.body)
@@ -70,6 +71,7 @@ struct ChangeAppIconView: View {
                     .shadow(radius: 10)
                 }
                 .padding()
+                 */
             
             Spacer()
             

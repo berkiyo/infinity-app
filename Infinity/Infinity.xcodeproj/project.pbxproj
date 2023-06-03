@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		604D60FD2A2AF472001E7BA9 /* AppIcon-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60FB2A2AF472001E7BA9 /* AppIcon-6.png */; };
 		604D60FE2A2AF472001E7BA9 /* AppIcon-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60FC2A2AF472001E7BA9 /* AppIcon-5.png */; };
+		604D61002A2AF8C2001E7BA9 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604D60FF2A2AF8C2001E7BA9 /* UserDefaultKeys.swift */; };
+		604D61032A2AF8F4001E7BA9 /* ReviewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604D61022A2AF8F4001E7BA9 /* ReviewHandler.swift */; };
 		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
 		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
 		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
@@ -62,6 +64,8 @@
 /* Begin PBXFileReference section */
 		604D60FB2A2AF472001E7BA9 /* AppIcon-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-6.png"; path = "../../../../../../Pictures/Icons/Infinity/AppIcon-6.png"; sourceTree = "<group>"; };
 		604D60FC2A2AF472001E7BA9 /* AppIcon-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-5.png"; path = "../../../../../../Pictures/Icons/Infinity/AppIcon-5.png"; sourceTree = "<group>"; };
+		604D60FF2A2AF8C2001E7BA9 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		604D61022A2AF8F4001E7BA9 /* ReviewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHandler.swift; sourceTree = "<group>"; };
 		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
 		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604D61012A2AF8E0001E7BA9 /* ReviewHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				604D60FF2A2AF8C2001E7BA9 /* UserDefaultKeys.swift */,
+				604D61022A2AF8F4001E7BA9 /* ReviewHandler.swift */,
+			);
+			path = ReviewHandlers;
+			sourceTree = "<group>";
+		};
 		60611C7529E6BED5005CF452 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		60DB3E5A29D061080031E383 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
+				604D61012A2AF8E0001E7BA9 /* ReviewHandlers */,
 				60611C8229EA6540005CF452 /* StoreKit */,
 				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
@@ -408,10 +422,12 @@
 				60DB3EA329D062E40031E383 /* SettingsView.swift in Sources */,
 				60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */,
 				60DB3E9529D0626E0031E383 /* ProView.swift in Sources */,
+				604D61002A2AF8C2001E7BA9 /* UserDefaultKeys.swift in Sources */,
 				60DB3EA129D062D70031E383 /* PlaceholderView.swift in Sources */,
 				60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */,
 				60DB3E8F29D062510031E383 /* AboutView.swift in Sources */,
 				60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */,
+				604D61032A2AF8F4001E7BA9 /* ReviewHandler.swift in Sources */,
 				60611C8129EA6379005CF452 /* QuotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
