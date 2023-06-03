@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604D60FD2A2AF472001E7BA9 /* AppIcon-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60FB2A2AF472001E7BA9 /* AppIcon-6.png */; };
+		604D60FE2A2AF472001E7BA9 /* AppIcon-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60FC2A2AF472001E7BA9 /* AppIcon-5.png */; };
 		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
 		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
 		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		604D60FB2A2AF472001E7BA9 /* AppIcon-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-6.png"; path = "../../../../../../Pictures/Icons/Infinity/AppIcon-6.png"; sourceTree = "<group>"; };
+		604D60FC2A2AF472001E7BA9 /* AppIcon-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-5.png"; path = "../../../../../../Pictures/Icons/Infinity/AppIcon-5.png"; sourceTree = "<group>"; };
 		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
 		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				60EAE90B29FE113400F3F867 /* AppIcon-2.png */,
 				60EAE90C29FE113400F3F867 /* AppIcon-3.png */,
 				60EAE90A29FE113300F3F867 /* AppIcon-4.png */,
+				604D60FC2A2AF472001E7BA9 /* AppIcon-5.png */,
+				604D60FB2A2AF472001E7BA9 /* AppIcon-6.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -354,12 +360,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */,
+				604D60FD2A2AF472001E7BA9 /* AppIcon-6.png in Resources */,
 				60EAE91129FE113400F3F867 /* AppIcon-1.png in Resources */,
 				60EAE90F29FE113400F3F867 /* AppIcon-2.png in Resources */,
 				60EAE91029FE113400F3F867 /* AppIcon-3.png in Resources */,
 				60611C8429EA657D005CF452 /* infinity.storekit in Resources */,
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
 				60EAE90E29FE113400F3F867 /* AppIcon-4.png in Resources */,
+				604D60FE2A2AF472001E7BA9 /* AppIcon-5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

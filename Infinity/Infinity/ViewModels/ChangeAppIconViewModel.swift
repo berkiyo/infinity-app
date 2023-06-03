@@ -12,10 +12,12 @@ import SwiftUI
 final class ChangeAppIconViewModel: ObservableObject {
     enum AppIcon: String, CaseIterable, Identifiable {
         case primary = "AppIcon"
-        //case appIcon1 = "AppIcon-1"
+        case appIcon1 = "AppIcon-1"
         case appIcon2 = "AppIcon-2"
         case appIcon3 = "AppIcon-3"
         case appIcon4 = "AppIcon-4"
+        case appIcon5 = "AppIcon-5"
+        case appIcon6 = "AppIcon-6"
 
         var id: String { rawValue }
         var iconName: String? {
@@ -31,13 +33,19 @@ final class ChangeAppIconViewModel: ObservableObject {
         var description: String {
             switch self {
             case .primary:
-                return "Infinity"
+                return "Pro"
+            case .appIcon1:
+                return "Orange"
             case .appIcon2:
                 return "Bold"
             case .appIcon3:
                 return "Ocean"
             case .appIcon4:
-                return "Neon"
+                return "Lavender"
+            case .appIcon5:
+                return "Infinity"
+            case .appIcon6:
+                return "Pro"
             }
         }
 
