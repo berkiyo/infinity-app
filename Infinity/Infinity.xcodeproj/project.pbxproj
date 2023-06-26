@@ -159,13 +159,6 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
-		60CBF1E42A494A70009E18AB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		60CBF1E72A494B2B009E18AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				60CBF1E52A494A83009E18AB /* StoreKit */,
-				60CBF1E42A494A70009E18AB /* New Group */,
 				604D61012A2AF8E0001E7BA9 /* ReviewHandlers */,
 				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
