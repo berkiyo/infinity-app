@@ -20,6 +20,8 @@
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
 		60CBF1DE2A486AE9009E18AB /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = 60CBF1DD2A486AE9009E18AB /* ReceiptParser */; };
 		60CBF1E02A486AE9009E18AB /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 60CBF1DF2A486AE9009E18AB /* RevenueCat */; };
+		60CBF1E62A494A83009E18AB /* StoreKit in Resources */ = {isa = PBXBuildFile; fileRef = 60CBF1E52A494A83009E18AB /* StoreKit */; };
+		60CBF1E92A494B2B009E18AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CBF1E82A494B2B009E18AB /* StoreKit.framework */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
 		60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E6329D061090031E383 /* Preview Assets.xcassets */; };
@@ -75,6 +77,8 @@
 		60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
 		6079B12E2A32B15900D1312A /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		60CBF1E52A494A83009E18AB /* StoreKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StoreKit; sourceTree = "<group>"; };
+		60CBF1E82A494B2B009E18AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
 		60DB3E5F29D061090031E383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CBF1E92A494B2B009E18AB /* StoreKit.framework in Frameworks */,
 				60CBF1E02A486AE9009E18AB /* RevenueCat in Frameworks */,
 				60CBF1DE2A486AE9009E18AB /* ReceiptParser in Frameworks */,
 			);
@@ -154,6 +159,21 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
+		60CBF1E42A494A70009E18AB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		60CBF1E72A494B2B009E18AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60CBF1E82A494B2B009E18AB /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60DB3E4F29D061080031E383 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +181,7 @@
 				60DB3E6C29D061090031E383 /* InfinityTests */,
 				60DB3E7629D061090031E383 /* InfinityUITests */,
 				60DB3E5929D061080031E383 /* Products */,
+				60CBF1E72A494B2B009E18AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +198,8 @@
 		60DB3E5A29D061080031E383 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
+				60CBF1E52A494A83009E18AB /* StoreKit */,
+				60CBF1E42A494A70009E18AB /* New Group */,
 				604D61012A2AF8E0001E7BA9 /* ReviewHandlers */,
 				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
@@ -384,6 +407,7 @@
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
 				60EAE90E29FE113400F3F867 /* AppIcon-4.png in Resources */,
 				604D60FE2A2AF472001E7BA9 /* AppIcon-5.png in Resources */,
+				60CBF1E62A494A83009E18AB /* StoreKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
