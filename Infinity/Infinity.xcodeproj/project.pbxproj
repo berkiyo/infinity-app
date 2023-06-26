@@ -14,10 +14,12 @@
 		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
 		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
 		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
-		60611C8429EA657D005CF452 /* infinity.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 60611C8329EA657D005CF452 /* infinity.storekit */; };
 		60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8529EA66EE005CF452 /* StoreViewModel.swift */; };
 		60611C8829EBA265005CF452 /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */; };
+		6079B12F2A32B15900D1312A /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6079B12E2A32B15900D1312A /* JournalView.swift */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
+		60CBF1DE2A486AE9009E18AB /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = 60CBF1DD2A486AE9009E18AB /* ReceiptParser */; };
+		60CBF1E02A486AE9009E18AB /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 60CBF1DF2A486AE9009E18AB /* RevenueCat */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
 		60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E6329D061090031E383 /* Preview Assets.xcassets */; };
@@ -69,9 +71,9 @@
 		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
 		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
-		60611C8329EA657D005CF452 /* infinity.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = infinity.storekit; sourceTree = "<group>"; };
 		60611C8529EA66EE005CF452 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
+		6079B12E2A32B15900D1312A /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -108,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CBF1E02A486AE9009E18AB /* RevenueCat in Frameworks */,
+				60CBF1DE2A486AE9009E18AB /* ReceiptParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,14 +154,6 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
-		60611C8229EA6540005CF452 /* StoreKit */ = {
-			isa = PBXGroup;
-			children = (
-				60611C8329EA657D005CF452 /* infinity.storekit */,
-			);
-			path = StoreKit;
-			sourceTree = "<group>";
-		};
 		60DB3E4F29D061080031E383 = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				604D61012A2AF8E0001E7BA9 /* ReviewHandlers */,
-				60611C8229EA6540005CF452 /* StoreKit */,
 				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
 				60DB3E8729D061D10031E383 /* ViewModels */,
@@ -233,6 +228,7 @@
 				60DB3EA229D062E40031E383 /* SettingsView.swift */,
 				60DB3EA429D062FC0031E383 /* SplashScreenView.swift */,
 				60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */,
+				6079B12E2A32B15900D1312A /* JournalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +281,10 @@
 			dependencies = (
 			);
 			name = Infinity;
+			packageProductDependencies = (
+				60CBF1DD2A486AE9009E18AB /* ReceiptParser */,
+				60CBF1DF2A486AE9009E18AB /* RevenueCat */,
+			);
 			productName = Infinity;
 			productReference = 60DB3E5829D061080031E383 /* Infinity.app */;
 			productType = "com.apple.product-type.application";
@@ -357,6 +357,9 @@
 				Base,
 			);
 			mainGroup = 60DB3E4F29D061080031E383;
+			packageReferences = (
+				60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = 60DB3E5929D061080031E383 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,7 +381,6 @@
 				60EAE91129FE113400F3F867 /* AppIcon-1.png in Resources */,
 				60EAE90F29FE113400F3F867 /* AppIcon-2.png in Resources */,
 				60EAE91029FE113400F3F867 /* AppIcon-3.png in Resources */,
-				60611C8429EA657D005CF452 /* infinity.storekit in Resources */,
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
 				60EAE90E29FE113400F3F867 /* AppIcon-4.png in Resources */,
 				604D60FE2A2AF472001E7BA9 /* AppIcon-5.png in Resources */,
@@ -424,6 +426,7 @@
 				60DB3E9529D0626E0031E383 /* ProView.swift in Sources */,
 				604D61002A2AF8C2001E7BA9 /* UserDefaultKeys.swift in Sources */,
 				60DB3EA129D062D70031E383 /* PlaceholderView.swift in Sources */,
+				6079B12F2A32B15900D1312A /* JournalView.swift in Sources */,
 				60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */,
 				60DB3E8F29D062510031E383 /* AboutView.swift in Sources */,
 				60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */,
@@ -794,6 +797,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60CBF1DD2A486AE9009E18AB /* ReceiptParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = ReceiptParser;
+		};
+		60CBF1DF2A486AE9009E18AB /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60DB3E5029D061080031E383 /* Project object */;
 }
