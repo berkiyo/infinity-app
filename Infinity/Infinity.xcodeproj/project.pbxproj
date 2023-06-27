@@ -14,14 +14,9 @@
 		60611C7D29EA5237005CF452 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7C29EA5237005CF452 /* NotificationView.swift */; };
 		60611C7F29EA6367005CF452 /* AppleWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C7E29EA6367005CF452 /* AppleWatchView.swift */; };
 		60611C8129EA6379005CF452 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8029EA6379005CF452 /* QuotesView.swift */; };
-		60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8529EA66EE005CF452 /* StoreViewModel.swift */; };
 		60611C8829EBA265005CF452 /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */; };
 		6079B12F2A32B15900D1312A /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6079B12E2A32B15900D1312A /* JournalView.swift */; };
 		60C8D9C229D7EE11007DD2DE /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */; };
-		60CBF1DE2A486AE9009E18AB /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = 60CBF1DD2A486AE9009E18AB /* ReceiptParser */; };
-		60CBF1E02A486AE9009E18AB /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 60CBF1DF2A486AE9009E18AB /* RevenueCat */; };
-		60CBF1E62A494A83009E18AB /* StoreKit in Resources */ = {isa = PBXBuildFile; fileRef = 60CBF1E52A494A83009E18AB /* StoreKit */; };
-		60CBF1E92A494B2B009E18AB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CBF1E82A494B2B009E18AB /* StoreKit.framework */; };
 		60DB3E5C29D061080031E383 /* InfinityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB3E5B29D061080031E383 /* InfinityApp.swift */; };
 		60DB3E6029D061090031E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E5F29D061090031E383 /* Assets.xcassets */; };
 		60DB3E6429D061090031E383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DB3E6329D061090031E383 /* Preview Assets.xcassets */; };
@@ -73,11 +68,9 @@
 		60611C7C29EA5237005CF452 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		60611C7E29EA6367005CF452 /* AppleWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchView.swift; sourceTree = "<group>"; };
 		60611C8029EA6379005CF452 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
-		60611C8529EA66EE005CF452 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
 		6079B12E2A32B15900D1312A /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		60C8D9C129D7EE11007DD2DE /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
-		60CBF1E52A494A83009E18AB /* StoreKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StoreKit; sourceTree = "<group>"; };
 		60CBF1E82A494B2B009E18AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		60DB3E5829D061080031E383 /* Infinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB3E5B29D061080031E383 /* InfinityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityApp.swift; sourceTree = "<group>"; };
@@ -114,9 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60CBF1E92A494B2B009E18AB /* StoreKit.framework in Frameworks */,
-				60CBF1E02A486AE9009E18AB /* RevenueCat in Frameworks */,
-				60CBF1DE2A486AE9009E18AB /* ReceiptParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +181,6 @@
 		60DB3E5A29D061080031E383 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
-				60CBF1E52A494A83009E18AB /* StoreKit */,
 				604D61012A2AF8E0001E7BA9 /* ReviewHandlers */,
 				60611C7529E6BED5005CF452 /* Icons */,
 				60DB3E8829D061EE0031E383 /* Models */,
@@ -252,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				60DB3E8B29D062330031E383 /* ListViewModel.swift */,
-				60611C8529EA66EE005CF452 /* StoreViewModel.swift */,
 				60611C8729EBA265005CF452 /* ChangeAppIconViewModel.swift */,
 			);
 			path = ViewModels;
@@ -297,8 +285,6 @@
 			);
 			name = Infinity;
 			packageProductDependencies = (
-				60CBF1DD2A486AE9009E18AB /* ReceiptParser */,
-				60CBF1DF2A486AE9009E18AB /* RevenueCat */,
 			);
 			productName = Infinity;
 			productReference = 60DB3E5829D061080031E383 /* Infinity.app */;
@@ -373,7 +359,6 @@
 			);
 			mainGroup = 60DB3E4F29D061080031E383;
 			packageReferences = (
-				60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = 60DB3E5929D061080031E383 /* Products */;
 			projectDirPath = "";
@@ -399,7 +384,6 @@
 				60DB3E6029D061090031E383 /* Assets.xcassets in Resources */,
 				60EAE90E29FE113400F3F867 /* AppIcon-4.png in Resources */,
 				604D60FE2A2AF472001E7BA9 /* AppIcon-5.png in Resources */,
-				60CBF1E62A494A83009E18AB /* StoreKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +409,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB3E8A29D061FC0031E383 /* ItemModel.swift in Sources */,
-				60611C8629EA66EE005CF452 /* StoreViewModel.swift in Sources */,
 				60DB3E9729D0628E0031E383 /* AddView.swift in Sources */,
 				60DB3E9929D0629C0031E383 /* HomeView.swift in Sources */,
 				60DB3E8C29D062330031E383 /* ListViewModel.swift in Sources */,
@@ -488,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -547,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -598,7 +583,7 @@
 		60DB3E7E29D061090031E383 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-1 AppIcon-2 AppIcon-3 AppIcon-4";
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-1 AppIcon-2 AppIcon-3 AppIcon-4 AppIcon-5 AppIcon-6";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -626,7 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.berkiyo.infinity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -642,7 +627,7 @@
 		60DB3E7F29D061090031E383 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-1 AppIcon-2 AppIcon-3 AppIcon-4";
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-1 AppIcon-2 AppIcon-3 AppIcon-4 AppIcon-5 AppIcon-6";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -670,7 +655,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.berkiyo.infinity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -813,30 +798,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		60CBF1DD2A486AE9009E18AB /* ReceiptParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = ReceiptParser;
-		};
-		60CBF1DF2A486AE9009E18AB /* RevenueCat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 60CBF1DC2A486AE9009E18AB /* XCRemoteSwiftPackageReference "purchases-ios" */;
-			productName = RevenueCat;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60DB3E5029D061080031E383 /* Project object */;
 }

@@ -5,14 +5,13 @@ import StoreKit
 struct ProView: View {
     
 
-    @EnvironmentObject var storeVM: StoreViewModel
     @State var isPurchased = false
     
     var body: some View {
         ZStack {
             
             
-            if storeVM.purchasedSubscriptions.isEmpty {
+            if true {
                 // subscriptionview
                 
                 VStack {
@@ -68,7 +67,7 @@ struct ProView: View {
                         // Button to subscribe (monthly)
                         Button(action: {
                             Task {
-                                await buy(product: storeVM.subscriptions[0])
+                                //await buy(product: storeVM.subscriptions[0])
                             }
                         }) {
                             VStack {
@@ -92,7 +91,7 @@ struct ProView: View {
                         // Button to subscribe (yearly)
                         Button(action: {
                             Task {
-                                await buy(product: storeVM.subscriptions[1])
+                                //await buy(product: storeVM.subscriptions[1])
                             }
                         }) {
                             VStack {
@@ -155,17 +154,6 @@ struct ProView: View {
             }
             
             
-        }
-    }
-    
-    // Function to buy
-    func buy(product: Product) async {
-        do {
-            if try await storeVM.purchase(product) != nil {
-                isPurchased = true
-            }
-        } catch {
-            print("Purchase failed, please try again.")
         }
     }
 }

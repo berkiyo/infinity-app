@@ -3,8 +3,7 @@ import StoreKit
 
 struct SettingsView: View {
     @Environment(\.requestReview) var requestReview
-    @EnvironmentObject var storeVM: StoreViewModel
-
+    
     var body: some View {
         ZStack {
             VStack {
@@ -34,26 +33,22 @@ struct SettingsView: View {
                             NavigationLink { ChangeAppIconView() } label: {
                                 Text("📱 Change App Icon")
                             }
-                            .disabled(storeVM.purchasedSubscriptions.isEmpty)
                             
                             // Notification View
                             // Pro Feature
                             NavigationLink { NotificationView() } label: {
                                 Text("🔔 Custom Notifications")
                             }
-                            .disabled(storeVM.purchasedSubscriptions.isEmpty)
                             
                             // Quotes View
                             // Pro Feature
                             NavigationLink { QuotesView() } label: {
                                 Text("📖 Motivational Quotes")
                             }
-                            .disabled(storeVM.purchasedSubscriptions.isEmpty)
                             
                             NavigationLink { JournalView() } label: {
                                 Text("📝 Personal Journal")
                             }
-                            .disabled(storeVM.purchasedSubscriptions.isEmpty)
                         }
                         
                         Section(header: Text("Feedback")) {
